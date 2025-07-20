@@ -8,9 +8,9 @@ const App = () => {
   return (
     <div>
       {/* <ToolDetails/> */}
-      {/* <FormInput/> */}
+      <FormInput/>
       {/* <EditableDetails/> */}
-      <Prac/>
+      {/* <Prac/> */}
     </div>
   )
 }
