@@ -3,8 +3,11 @@ import tooldata from './tooldata.json'
 
 const ToolDetails = () => {
   const [nodeData,setNodeData] = useState(tooldata.nodes);
-  const handleChange = () =>{
-
+  const [updatedNodeData, setUpdatedNodeData] = useState();
+  
+  const handleNNameChange = (e) =>{
+    const updatedNName = e.target.value;
+    setUpdatedNodeData = nodeData.map((node)=> {node.node_name=updatedNName})
   }
   const handleSubmit = () =>{
     
@@ -18,7 +21,7 @@ const ToolDetails = () => {
               <div className="tools" key={item.nodeid}>
                 <div className="nodename">
                   <label> NodeName: </label>
-                  <input type="text" value={item.node_name} onChange={handleChange} />
+                  <input type="text" value={item.node_name} onChange={handleNNameChange} />
                 </div>
                 <button onClick={handleSubmit}> Submit </button>
               </div>

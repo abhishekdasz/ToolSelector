@@ -1,0 +1,33 @@
+{
+  "nodes": [
+    {
+      "nodeid": 1,
+      "node_name": "Tool Node Function Name",
+      "node_descr": "This is a tool node",
+      "node_type": "tool",
+      "tool_node": {
+        "tool_type": "ML",
+        "input_params": [
+          {
+            "param_name": "param1",
+            "param_datatype": "string",
+            "param_value": "{{state_var}}"
+          },
+          {
+            "param_name": "param2",
+            "param_datatype": "string",
+            "param_value": "BBSR"
+          }
+        ],
+        "output_params": [
+          {
+            "param_name": "param1",
+            "param_datatype": "string",
+            "param_value": "state_var"
+          }
+        ],
+        "tool_name": "string"
+      }
+    }
+  ]
+}
