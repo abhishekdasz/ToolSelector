@@ -4,6 +4,7 @@ import FormInput from './components/FormInput'
 import EditableDetails from './components/EditableDetails'
 import Prac from './components/prac'
 import StepProgress from './components/StepProgress'
+import ProgressBarToggle from './components/ProgressBarToggle'
 
 const App = () => {
   return (
@@ -12,7 +13,7 @@ const App = () => {
       {/* <FormInput/> */}
       {/* <EditableDetails/> */}
       {/* <Prac/> */}
-      <StepProgress/>
+      <ProgressBarToggle/>
     </div>
   )
 }
