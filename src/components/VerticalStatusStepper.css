@@ -1,0 +1,53 @@
+.vertical-container {
+  width: 200px;
+  height: 250px;       /* space for vertical steps */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+}
+
+/* Position the progress line */
+.vertical-container .RSPBprogressBar {
+  position: absolute;
+  top: 0;
+  left: 15px;          /* align behind circles */
+  height: 100%;
+  width: 4px;
+  background: #ddd;
+  border-radius: 2px;
+}
+
+.vertical-container .RSPBprogressBar .RSPBprogressBarText {
+  display: none; /* hide default labels */
+}
+
+.step-row {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  z-index: 1;   /* make circles above the line */
+}
+
+.circle {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #bbb;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.circle.active {
+  background: #3b82f6; /* Active = blue */
+}
+
+.label {
+  font-size: 16px;
+  color: #333;
+}
